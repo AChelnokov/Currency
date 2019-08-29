@@ -1,0 +1,43 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+
+.navbar {
+  border-width: 0 0 1px;
+  border-style: solid;
+}
+.navbar-light {
+  background-color: #fff;
+  border-color: #e3ebf6;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .35s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  .navbar-vertical.navbar-expand-md {
+    display:block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 250px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    overflow-y: auto
+  }
+  .navbar-vertical.navbar-expand-md.fixed-left {
+    left: 0;
+    border-width: 0 1px 0 0;
+  }
+  .main-content {
+    margin-left: 250px;
+  }
+  .main-content .container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 20px !important;
+  }
+}
